@@ -421,7 +421,7 @@ aside {
 .map figure {
     width: 100%;
     height: 0;
-    padding-bottom: 75%;
+    padding-bottom: 80%;
     overflow: hidden;
     position: relative;
 }
@@ -727,6 +727,10 @@ aside {
     width: 46%;
   }
 
+  .map figure {
+      padding-bottom: 45%;
+  }
+
   .contact-content {
     justify-content: space-between;
     width: 100%;
@@ -839,6 +843,10 @@ aside {
 
   .mission h2 {
     padding-bottom: 25px;
+  }
+
+  .map figure {
+      padding-bottom: 38%;
   }
 
   /* ________________________ FAQ PAGE STYLES _______________________________ */
