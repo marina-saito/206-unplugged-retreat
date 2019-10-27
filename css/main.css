@@ -127,6 +127,7 @@ textarea {
  h1 {
    font-size: 2.25em;
    color: #e2e3ed;
+   font-weight: 500;
    margin: 0;
  }
 
@@ -149,6 +150,7 @@ textarea {
  h3 {
    color: #e2e3ed;
    font-weight: 500;
+   line-height: 1.125em;
  }
 
  h4 {
@@ -163,12 +165,12 @@ textarea {
  }
 
  img {
-
- }
+	width: 100%;
+}
 
  figure {
-
- }
+  margin: 0;
+}
 
  address {
    font-style: normal;
@@ -197,6 +199,15 @@ header .content-wrapper {
   justify-content: center;
   flex-flow: row wrap;
   margin: 5px 0px;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  padding: 15px 0;
 }
 
 .header-divider {
@@ -278,6 +289,9 @@ footer .copyright {
   width: 100%;
   display: flex;
   justify-content: center;
+  background: url('../img/hero.jpg') center no-repeat #333;
+  background-size: cover;
+  height: 500px;
 }
 
 .hero-area .content-wrapper {
@@ -313,6 +327,8 @@ aside {
   width: 100%;
   display: flex;
   justify-content: center;
+  background: url('../img/features.jpg') center no-repeat #333;
+  background-size: cover;
 }
 
 .features .content-wrapper {
@@ -351,15 +367,26 @@ aside {
 .reviews .content-wrapper {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   flex-flow: row wrap;
 }
 
 .reviews article {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.reviews figure {
+  display: flex;
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.reviews h2 {
+  margin-bottom: 25px;
 }
 
 .reviews h3 {
@@ -596,6 +623,11 @@ aside {
     margin: 30px 65px;
   }
 
+  header figure {
+    width: 34%;
+    padding: 0;
+  }
+
   .header-divider {
     width: 0%;
     border: none;
@@ -626,6 +658,10 @@ aside {
 
   /* ________________________ HOMEPAGE STYLES ___________________________________ */
 
+  .hero-area {
+    height: 600px;
+  }
+
   .contact-wrapper {
     justify-content: space-between;
     max-width: 640px;
@@ -655,6 +691,10 @@ aside {
 
   .reviews article div {
     width: 49%;
+  }
+
+  .reviews h3 {
+    margin: 0 0 20px 0;
   }
 
   /* ________________________ ABOUT PAGE STYLES _______________________________ */
@@ -725,6 +765,10 @@ aside {
 
   header .content-wrapper {
     margin: 30px 120px;
+  }
+
+  header figure {
+    width: 29%;
   }
 
   .header-divider {
