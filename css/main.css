@@ -344,7 +344,20 @@ aside {
 
 .features article {
   width: 100%;
-  margin: 14px 19%;
+  margin: 0 19%;
+}
+
+.features article p {
+  margin: 0;
+}
+
+.features i {
+  color: #e2e3ed;
+  font-size: 3.75em;
+  margin-top: 52px;
+  margin-bottom: 40px;
+  width: 100%;
+  text-align: center;
 }
 
 .fontawesome-icon {
@@ -703,6 +716,11 @@ aside {
   .features article {
     width: 32%;
     margin: 0 9%;
+  }
+
+  .features i {
+    margin-top: 50px;
+    margin-bottom: 30px;
   }
 
   .reviews article div {
