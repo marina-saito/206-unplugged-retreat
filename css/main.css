@@ -102,13 +102,65 @@ textarea {
  /* _______ MOBILE FIRST STYLES _____________________________________________ */
  /* _________________________________________________________________________ */
 
+ /* General Styles */
+
+ html {
+ 	font-size: 16px;
+ }
+
+ body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+ }
+
+ ul,
+ ol {
+   list-style-type: none;
+ }
+
+ a {
+   color: #e2e3ed;
+   text-decoration: none;
+   font-size: 1.125em;
+ }
+
+ h1 {
+   font-size: 2.25em;
+ }
+
+ h2 {
+   font-family: 'Poppins', sans-serif;
+   font-size: 1.875em;
+ }
+
+ h3,
+ h4 {
+   font-family: 'Poppins', sans-serif;
+   font-size: 1.125em;
+   margin: 0;
+ }
+
+ p {
+   margin: 0;
+   font-size: 0.875em;
+
+ }
+
+ img {
+
+ }
+
+ figure {
+
+ }
+
+ address {
+   font-style: normal;
+ }
+
 .content-wrapper {
   width: 90%;
   margin: 52px 20px;
-}
-
-p {
-  margin: 0;
 }
 
 /* ________________________ HEADER / FOOTER STYLES __________________________ */
@@ -123,10 +175,11 @@ footer {
 /* ________________________ HEADER STYLES ___________________________________ */
 
 header .content-wrapper {
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  margin: 15px 0px;
+  margin: 5px 0px;
 }
 
 .header-divider {
@@ -153,7 +206,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-
+  line-height: 3em;
 }
 
 /* ________________________ FOOTER STYLES ___________________________________ */
@@ -167,7 +220,7 @@ footer .content-wrapper {
   align-items: center;
   flex-flow: column nowrap;
   width: 55%;
-  margin-bottom: 5px;
+  margin: 5px 0;
 }
 
 .footer-content {
@@ -177,16 +230,18 @@ footer .content-wrapper {
   flex-flow: row wrap;
 }
 
+footer h4 {
+  line-height: 3.625em;
+}
+
 footer p {
   margin: 0;
 }
 
-footer .contact {
+footer .contact, footer .social {
   width: 100%;
-}
-
-footer .social {
-  width: 100%;
+  margin: 25px 0;
+  text-align: center;
 }
 
 footer .social-icons {
@@ -195,7 +250,7 @@ footer .social-icons {
 }
 
 footer .copyright {
-
+  margin: 25px 0 0 0;
 }
 
 /* ________________________ HOMEPAGE STYLES _________________________________ */
@@ -229,12 +284,12 @@ aside {
   width: 87%;
 }
 
-.form-description {
-
+.contact-wrapper h3 {
+  line-height: 2em;
 }
 
-.form {
-
+.form-description, .form {
+  margin: 20px 0;
 }
 
 .features {
@@ -253,16 +308,17 @@ aside {
 }
 
 .features article {
-  width: 66%;
-  margin: 0 17%;
+  width: 100%;
+  margin: 14px 19%;
 }
 
 .fontawesome-icon {
-
+  margin: 15px 0;
 }
 
 .features-item-description {
-
+  text-align: center;
+  margin: 15px 0;
 }
 
 .reviews {
@@ -284,7 +340,7 @@ aside {
 }
 
 .reviews h3 {
-  width: 50%;
+  margin: 25px 0;
 }
 
 /* ________________________ ABOUT PAGE STYLES _______________________________ */
@@ -331,6 +387,10 @@ aside {
   width: 100%;
 }
 
+.contact-content h4 {
+  line-height: 2.5em;
+}
+
 /* ________________________ FAQ PAGE STYLES _______________________________ */
 
 .faq {
@@ -346,6 +406,7 @@ aside {
 
 .faq-content {
   width: 100%;
+  padding: 3em 0 0 0;
 }
 
 /* ==========================================================================
@@ -457,7 +518,7 @@ aside {
   }
 
   header nav {
-    width: 16%;
+    width: 20%;
   }
 
 /* ________________________ FOOTER STYLES ___________________________________ */
