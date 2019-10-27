@@ -126,11 +126,17 @@ textarea {
 
  h1 {
    font-size: 2.25em;
+   color: #e2e3ed;
+   margin: 0;
  }
 
  h2 {
    font-family: 'Poppins', sans-serif;
    font-size: 1.875em;
+   color: #e2e3ed;
+   font-weight: 500;
+   margin: 0;
+   width: 100%;
  }
 
  h3,
@@ -140,10 +146,20 @@ textarea {
    margin: 0;
  }
 
+ h3 {
+   color: #e2e3ed;
+   font-weight: 500;
+ }
+
+ h4 {
+   color: #ffffff;
+   font-weight: 500;
+ }
+
  p {
    margin: 0;
    font-size: 0.875em;
-
+   color: #e2e3ed;
  }
 
  img {
@@ -170,6 +186,7 @@ footer {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  background-color: black;
 }
 
 /* ________________________ HEADER STYLES ___________________________________ */
@@ -184,6 +201,7 @@ header .content-wrapper {
 
 .header-divider {
   width: 100%;
+  border: solid 1px #3a3a3a;
 }
 
 header nav {
@@ -207,6 +225,7 @@ header nav ul li {
 
 header nav ul li a {
   line-height: 3em;
+  font-weight: bold;
 }
 
 /* ________________________ FOOTER STYLES ___________________________________ */
@@ -256,44 +275,44 @@ footer .copyright {
 /* ________________________ HOMEPAGE STYLES _________________________________ */
 
 .hero-area {
-
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-area .content-wrapper {
 
 }
 
-h1 {
-  margin: 0;
-}
-
-h2 {
-  margin: 0;
-  width: 100%;
-}
-
 aside {
-
+  background-color: #527158;
+  overflow: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-wrapper {
   display: flex;
   justify-content: flex-start;
   flex-flow: row wrap;
-  margin: 30px 20px;
+  margin: 1.875em 20px;
   width: 87%;
+  overflow: auto;
 }
 
 .contact-wrapper h3 {
-  line-height: 2em;
+  padding-bottom: 1em;
 }
 
 .form-description, .form {
-  margin: 20px 0;
+  padding-bottom: 1.875em;
 }
 
 .features {
-
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .features .content-wrapper {
@@ -322,7 +341,11 @@ aside {
 }
 
 .reviews {
-
+  background-color: #2a423a;
+  overflow: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .reviews .content-wrapper {
@@ -346,7 +369,10 @@ aside {
 /* ________________________ ABOUT PAGE STYLES _______________________________ */
 
 .mission {
-
+  background-color: #527158;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .mission .content-wrapper {
@@ -366,7 +392,10 @@ aside {
 }
 
 .contact-section {
-
+  background-color: #2a423a;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-section .content-wrapper {
@@ -394,7 +423,10 @@ aside {
 /* ________________________ FAQ PAGE STYLES _______________________________ */
 
 .faq {
-
+  background-color: #527158;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .faq .content-wrapper {
@@ -498,12 +530,62 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
+   aside .form {
+     /* margin-bottom: 3.375em; */
+   }
+
+   input[type=text] {
+     box-sizing: border-box;
+     width: 100%;
+     color: #2a423a;
+     font-style: italic;
+   }
+
+   input[type=button] {
+     width: 100%;
+     padding: 20px 0;
+     margin-top: 20px;
+     background-color: #2a423a;
+     font-family: 'Poppins', Helvetica, Arial, sans-serif;
+     font-weight: 500;
+     font-size: 1.125em;
+     color: #e2e3ed;
+     border: none;
+     text-align: center;
+     text-transform: uppercase;
+   }
+
 @media only screen and (min-width: 768px) {
   /* Tablet styles */
 
+  a {
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 0.875em;
+  }
+
   .content-wrapper {
-    width: 83%;
+    max-width: 640px;
     margin: 100px 65px;
+  }
+
+  header, footer {
+    justify-content: center;
   }
 
 /* ________________________ HEADER STYLES ___________________________________ */
@@ -515,6 +597,7 @@ aside {
 
   .header-divider {
     width: 0%;
+    border: none;
   }
 
   header nav {
@@ -544,7 +627,12 @@ aside {
 
   .contact-wrapper {
     justify-content: space-between;
-    margin: 50px 65px;
+    max-width: 640px;
+    margin: 52px 65px;
+  }
+
+  .form-description, .form {
+    padding-bottom: 0;
   }
 
   .form-description {
@@ -569,6 +657,10 @@ aside {
   }
 
   /* ________________________ ABOUT PAGE STYLES _______________________________ */
+
+  .mission h2 {
+    padding-bottom: 40px;
+  }
 
   .mission-content {
     justify-content: space-between;
@@ -602,8 +694,29 @@ aside {
 @media only screen and (min-width: 1200px) {
   /* Desktop styles */
 
+  a {
+    font-size: 1.125em;
+  }
+
+  h1 {
+    font-size: 3.75em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+  }
+
   .content-wrapper {
-    width: 80%;
+    max-width: 960px;
     margin: 100px 120px;
   }
 
@@ -643,7 +756,7 @@ aside {
   }
 
   .contact-wrapper {
-    width: 80%;
+    max-width: 960px;
     margin: 50px 120px;
   }
 
@@ -663,6 +776,9 @@ aside {
 
   /* ________________________ ABOUT PAGE STYLES _______________________________ */
 
+  .mission h2 {
+    padding-bottom: 25px;
+  }
 
   /* ________________________ FAQ PAGE STYLES _______________________________ */
 
