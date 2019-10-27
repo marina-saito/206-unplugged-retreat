@@ -539,6 +539,7 @@ aside {
      width: 100%;
      color: #2a423a;
      font-style: italic;
+     height: 50px;
    }
 
    input[type=button] {
