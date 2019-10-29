@@ -279,6 +279,21 @@ footer .social-icons {
   justify-content: space-around;
 }
 
+footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #527158;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+}
+
+footer i {
+
+}
+
 footer .copyright {
   margin: 25px 0 0 0;
 }
